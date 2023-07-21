@@ -1,3 +1,28 @@
 .underlined{
     text-decoration: line-through;
 }
+.button {
+    border: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+button :hover{
+    background-color: rgb(202, 79, 79);
+}
+
+.form-button{
+    border: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+
+}
+

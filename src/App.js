@@ -19,10 +19,15 @@ const App = () => {
     setToDos(toDos.filter((toDo) => toDo.id !== id));
   };
 
+  const handleEditToDo = (id)=>{
+    setToDos((toDos)=>toDos.map(toDo=>toDo.id===id?toDo:""))
+
+  }
+
   return (
     <div>
       <AddToDo handleAddToDo={handleAddToDo} toDos={toDos} />
-      <ToDo toDos={toDos} handleDeleteItem={handleDeleteToDo} />
+      <ToDo toDos={toDos} handleDeleteItem={handleDeleteToDo} onSelect={handleEditToDo}/>
     </div>
   );
 };

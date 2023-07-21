@@ -17,7 +17,6 @@ const AddToDo = ({ handleAddToDo, toDos }) => {
 
   return (
     <>
-    <p>You Have {toDos.length } Tasks remaining</p>
       <form onSubmit={handleSubmit}>
         <label>Add Item: </label>
         <input
@@ -25,8 +24,11 @@ const AddToDo = ({ handleAddToDo, toDos }) => {
           value={item}
           onChange={(e) => setItem(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="form-button">
+          Submit
+        </button>
       </form>
+      <p>You Have {toDos.length} Tasks remaining</p>
     </>
   );
 };

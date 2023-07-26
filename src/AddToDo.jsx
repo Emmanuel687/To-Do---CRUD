@@ -25,7 +25,7 @@ const AddToDo = ({ handleAddToDo, toDos }) => {
           onChange={(e) => setItem(e.target.value)}
         />
         <button type="submit" className="form-button">
-          Submit
+          Submits
         </button>
       </form>
       <p>You Have {toDos.length} Tasks remaining</p>

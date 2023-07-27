@@ -4,9 +4,9 @@ import AddToDo from "./AddToDo";
 
 const App = () => {
   const listItems = [
-    { id: 1, name: "Wash Clothes" },
-    { id: 2, name: "Clean House" },
-    { id: 3, name: "Take a Shower" },
+    { id: 1, name: "Wash Clothes", completed: true },
+    { id: 2, name: "Eat", completed: false },
+    { id: 3, name: "Pack Item", completed: true },
   ];
 
   const [toDos, setToDos] = useState(listItems);
@@ -19,15 +19,22 @@ const App = () => {
     setToDos(toDos.filter((toDo) => toDo.id !== id));
   };
 
-  const handleEditToDo = (id)=>{
-    setToDos((toDos)=>toDos.map(toDo=>toDo.id===id?toDo:""))
-
-  }
+  const handleToggleToDo = (id) => {
+    setToDos((toDos) =>
+      toDos.map((toDo) =>
+        toDo.id === id ? {...toDo, completed: !toDo.completed } : toDo
+      )
+    );
+  };
 
   return (
     <div>
       <AddToDo handleAddToDo={handleAddToDo} toDos={toDos} />
-      <ToDo toDos={toDos} handleDeleteItem={handleDeleteToDo} onSelect={handleEditToDo}/>
+      <ToDo
+        toDos={toDos}
+        handleDeleteItem={handleDeleteToDo}
+        handleToggleToDo={handleToggleToDo}
+      />
     </div>
   );
 };

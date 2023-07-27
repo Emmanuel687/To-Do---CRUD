@@ -18,7 +18,7 @@ const AddToDo = ({ handleAddToDo, toDos }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>Add Ite </label>
+        <label>Add Item </label>
         <input
           type="text"
           value={item}

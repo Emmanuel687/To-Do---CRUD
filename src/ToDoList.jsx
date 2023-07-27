@@ -1,21 +1,17 @@
-import React, { useState } from "react";
 import "./index.css";
 
-const ToDoList = ({ toDo, handleDeleteItem, onSelect }) => {
-  const [completed, setCompleted] = useState(false);
-
+const ToDoList = ({ toDo, handleDeleteItem, handleToggleToDo }) => {
   return (
     <div className="display">
-      <input type="checkbox" onChange={(e) => setCompleted(e.target.checked)} />
-
-      <p className={completed ? "underlined" : ""}>{toDo.name}</p>
-      {completed && <p>Completed</p>}
+      <p className={toDo.completed ? "underlined" : ""}>{toDo.name}</p>
       <button className="button" onClick={() => handleDeleteItem(toDo.id)}>
         Delete
       </button>
-      <button className="button" onClick={() => onSelect(toDo.id)}>
-        Editt
-      </button>
+      <input
+        value={toDo.completed}
+        type="checkbox"
+        onChange={() => handleToggleToDo(toDo.id)}
+      />
     </div>
   );
 };

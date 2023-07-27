@@ -1,7 +1,9 @@
 # React ToDo Application
 The React ToDo Application is a simple web application that allows users to manage their tasks and keep track of their to-do list. It provides features like adding new tasks, marking tasks as completed, and deleting tasks from the list.
 
-# Iamges
+# Images
+-I Focused mostly on the functionality, Excuse me for the UI today.
+![Alt text](web-screenshot-27-07-2023.jpg)
 
 # Features
 Add new tasks to the to-do list.

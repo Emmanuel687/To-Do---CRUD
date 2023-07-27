@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ToDo from "./ToDo";
 import AddToDo from "./AddToDo";
+import "./index.css"
 
 const App = () => {
   const listItems = [
@@ -28,7 +29,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="alignment">
       <AddToDo handleAddToDo={handleAddToDo} toDos={toDos} />
       <ToDo
         toDos={toDos}

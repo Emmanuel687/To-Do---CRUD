@@ -7,7 +7,7 @@ const App = () => {
   const listItems = [
     { id: 1, name: "Wash Clothes", completed: true },
     { id: 2, name: "Eat", completed: false },
-    { id: 3, name: "Pack Item", completed: true },
+    { id: 3, name: "Pac Item", completed: true },
   ];
 
   const [toDos, setToDos] = useState(listItems);

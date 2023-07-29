@@ -36,7 +36,7 @@ npm start
 Open your web browser and visit http://localhost:3000 to access the application.
 Usage
 
-Once the application is running, you can use the following features:
+Once the application is running, you can use the following features:-
 
 Add Task: To add a new task, simply type the task description in the input field at the top of the application and press Enter or click the "Add" button.
 

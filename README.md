@@ -56,6 +56,6 @@ Push to the branch: git push origin my-feature.
 Open a pull request.
 
 # License
-This project is licensed under the MIT License 2023.
+This project is licensed under the MIT License 2023
 
 
